@@ -1,0 +1,30 @@
+.bigCookie {
+    position: relative;
+}
+
+.textCookie {
+    position: absolute;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: -160px;
+    margin-left: -65px;
+    animation-duration: 3s;
+    animation-name: opacityAnimation;
+    opacity: 0;
+}
+
+@keyframes opacityAnimation {
+    0% {
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,144 @@
+[id^='building-'] {
+    background: url(/assets/images/store-tile.jpg);
+    cursor: pointer;
+    height: 65px;
+    display: flex;
+}
+
+[id^='building-']:hover {
+    box-shadow: inset 0px 0px 15px 4px rgba(255, 255, 255, 1);
+    transition: 0.75s;
+}
+
+[id^='building-']:active {
+    box-shadow: inset 0px 0px 15px 4px rgb(0, 0, 0);
+    transition: 0.75s;
+}
+
+
+/* [id^='building-'].unlocked :hover {
+    box-shadow: inset 0px 0px 15px 4px rgba(255, 255, 255, 1);
+    transition: 0.75s;
+} */
+
+
+/* TUILES NAMES */
+
+.name {
+    font-family: 'merriweatherBold';
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px rgba( 0, 0, 0);
+}
+
+
+/* TUILES COST */
+
+.cost {
+    font-family: 'merriweatherBold';
+    background: url(/assets/images/money.png) no-repeat;
+    font-size: 0.7em;
+    height: 5vh;
+    padding-left: 25px;
+    text-shadow: 0px 0px 4px rgba( 0, 0, 0), 0px 1px 4px rgba( 0, 0, 0);
+}
+
+.box {
+    padding: 3%;
+}
+
+
+/* TUILES ICON  */
+
+[id^='building-'] .icon {
+    height: 60px;
+    width: 62px;
+}
+
+
+/* VERSION LOCKED*/
+
+#building-cursor.locked .icon {
+    background: url(/assets/images/buildings.png);
+    background-position-x: -65px;
+    background-position-y: 0;
+}
+
+#building-grandma.locked .icon {
+    background: url(/assets/images/buildings.png);
+    background-position-x: -65px;
+    background-position-y: -60px;
+}
+
+#building-farm.locked .icon {
+    background: url(/assets/images/buildings.png);
+    background-position-x: -65px;
+    background-position-y: -195px;
+}
+
+#building-mine.locked .icon {
+    background: url(/assets/images/buildings.png);
+    background-position-x: -65px;
+    background-position-y: -256px;
+}
+
+#building-factory.locked .icon {
+    background: url(/assets/images/buildings.png);
+    background-position-x: -65px;
+    background-position-y: -322px;
+}
+
+
+/* VERSION DISABLED */
+
+.disabled {
+    filter: brightness(70%);
+    transition: filter 0.75s;
+}
+
+.disabled .cost {
+    color: #ff6666;
+}
+
+
+/* VERSION UNLOCKED */
+
+#building-cursor.unlocked .icon {
+    background: url(/assets/images/buildings.png) 0 0;
+}
+
+#building-grandma.unlocked .icon {
+    background: url(/assets/images/buildings.png) 0 -60px;
+}
+
+#building-farm.unlocked .icon {
+    background: url(/assets/images/buildings.png) 0 -195px;
+}
+
+#building-mine.unlocked .icon {
+    background: url(/assets/images/buildings.png) 0 -256px;
+}
+
+#building-factory.unlocked .icon {
+    background: url(/assets/images/buildings.png) 0 -322px;
+}
+
+
+/* VERSION ENABLED */
+
+.enabled {
+    filter: brightness(100%);
+    transition: filter 0.75s;
+}
+
+.enabled .cost {
+    color: #66ff66;
+}
+
+.number {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(49, 45, 45, 0.479);
+    right: 10px;
+    top: 10px;
+}

@@ -1,0 +1,32 @@
+/* STORE SECTION */
+
+#store {
+    padding-top: 15px;
+    height: 100vh;
+    flex: 1;
+    min-width: 150px;
+    max-width: 300px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    background: radial-gradient(transparent, rgb(0, 0, 0, 0.7));
+}
+
+#buildings {
+    background: url(/assets/images/panel-horizontal.png);
+    min-height: 16px;
+    margin-top: 15px;
+    padding-top: 16px;
+}
+
+#buildings::before {
+    padding: 1px 10px;
+    position: absolute;
+    content: 'Buildings';
+    margin-top: -16px;
+    opacity: 0;
+}
+
+#buildings:hover::before {
+    opacity: 1;
+    transition: 0.75s;
+}

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#game {
+    background: url(/assets/images/bg-blue.jpg);
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.separator {
+    background: url(/assets/images/panel-vertical.png);
+    width: 16px;
+}
